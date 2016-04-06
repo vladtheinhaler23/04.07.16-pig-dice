@@ -5,7 +5,7 @@ function Score() {
   this.totalScore = 0
 }
 
-Score.prototype.addTotal = function() {
+Score.prototype.addTotal = function(turnScore) {
   return this.totalScore + turnScore;
 }
 
@@ -39,8 +39,21 @@ $(document).ready(function() {
           player2.turnScore = player2.addTurn(roll);
         }
       }
-      console.log(roll);
-      console.log(player1.turnScore);
-    })
+      console.log("your roll:", roll);
+      console.log("player1 turn score:", player1.turnScore);
+      console.log("player2 turn score:", player2.turnScore);
+    });
 
-})
+    $("#hold").click(function(event) {
+      if (player === 1) {
+        player1.totalScore = player1.addTotal(player1.turnScore);
+        player = 2;
+      } else {
+        player2.totalScore = player2.addTotal(player2.turnScore)
+        player = 1;
+      }
+      console.log("player 1 total score:", player1.totalScore);
+      console.log("player2 total score:", player2.totalScore);
+    });
+
+});
