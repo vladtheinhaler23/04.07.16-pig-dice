@@ -47,13 +47,31 @@ $(document).ready(function() {
     $("#hold").click(function(event) {
       if (player === 1) {
         player1.totalScore = player1.addTotal(player1.turnScore);
+        player1.turnScore = 0;
         player = 2;
+        if (player1.totalScore >= 100) {
+          alert("Player One Wins!!");
+        }
       } else {
         player2.totalScore = player2.addTotal(player2.turnScore)
         player = 1;
+        player2.turnScore = 0;
+        if (player2.totalScore >= 100) {
+          alert("Player Two Wins :/ ");
+        }
       }
       console.log("player 1 total score:", player1.totalScore);
-      console.log("player2 total score:", player2.totalScore);
+      console.log("player 2 total score:", player2.totalScore);
     });
+
+    $("#newGame").click(function(event) {
+      event.preventDefault;
+      var response = confirm("Start a new game? You will lose all progress!");
+      if (response) {
+        location.reload();
+      }
+    });
+
+
 
 });
