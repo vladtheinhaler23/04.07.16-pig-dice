@@ -4,7 +4,7 @@ function roll() {
   return Math.floor((Math.random() * 6) + 1);
 }
 
-function Player(name, turn, total) {
+function Player(name, turn) {
   this.name = name;
   this.turn = turn;
 }
