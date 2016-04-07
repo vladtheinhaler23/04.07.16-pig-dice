@@ -1,1 +1,57 @@
+.gameBoard {
+  text-align: center;
+}
+.die1 {
+  min-width: 75px;
+  min-height: 50px;
+  background-color: blue;
+  border: 5px solid black;
+  float: right;
+  line-height: 75px;
+}
+.die2 {
+  min-width: 75px;
+  min-height: 50px;
+  background-color: blue;
+  border: 5px solid black;
+  float: left;
+  line-height: 75px;
+}
+#displayTotals1 {
+  max-width: 100px;
+  min-width: 100px;
+  background-color: red;
+  border: 5px solid black;
+  text-align: center;
+}
+#displayTotals2 {
+  max-width: 100px;
+  min-width: 100px;
+  background-color: red;
+  border: 5px solid black;
+  text-align: right;
+  text-align: center;
+}
+#displayTurns1 {
+  max-width: 100px;
+  min-width: 100px;
+  background-color: red;
+  border: 5px solid black;
+  text-align: center;
+}
+#displayTurns2 {
+  max-width: 100px;
+  min-width: 100px;
+  background-color: red;
+  border: 5px solid black;
+  text-align: center;
 
+}
+
+
+#display1 {
+  float: left;
+}
+#display2 {
+  float: right;
+}
