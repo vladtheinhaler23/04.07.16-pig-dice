@@ -22,27 +22,39 @@
             <div class="col-md-6">
               <h1>PLAYER 1</h1>
               <div class="die1">
-                <p><span id="displayDie1"></span></p>
-                <p><span id="displayTurn1"></span></p>
-                <p><span id="displayTotal1"></span></p>
+                <p><span id="displayDie1">0</span></p> <!-- Placeholder until filled -->
               </div>
+              <p><span id="displayTurn1">0</span></p>
+              <p><span id="displayTotal1">0</span></p>
+              <button id="rollDice" type="submit" class="btn-danger rollDice">Roll</button>
+              <button id="hold" type="submit" class="btn-success hold">Hold</button>
             </div>
             <div class="col-md-6">
               <h1>PLAYER 2</h1>
               <div class="die2">
-                <p><span id="displayDie2"></span></p>
-                <p><span id="displayTurn2"></span></p>
-                <p><span id="displayTotal2"></span></p>
+                <p><span id="displayDie2">0</span></p>
               </div>
+              <p><span id="displayTurn2">0</span></p>
+              <p><span id="displayTotal2">0</span></p>
+              <button type="submit" class="btn-danger rollDice">Roll</button>
+              <button type="submit" class="btn-success hold">Hold</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="dice">
-        <button id="newGame" type="submit" class="btn-primary">NEW GAME</button>
-        <button id="rollDice" type="submit" class="btn-danger">Roll</button>
-        <button id="hold" type="submit" class="btn-success">Hold</button>
+        <div id="win-condition">
+          <div class="jumbotron">
+            <h2>PLAYER X Won</h2>
+            <button id="newGame" type="submit" class="btn-primary">NEW GAME</button>
+          </div>
       </div>
+      <div id="rules">
+        <div class="jumbotron">
+          <h1>Rules: </h1>
+          <button id="rules" type="submit" class="btn">Rules</button>
+          <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
+        </div>
+    </div>
     </div>
   </body>
   </html>

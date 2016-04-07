@@ -21,7 +21,7 @@ $(document).ready(function() {
   var roll1 = 0;
   var roll2 = 0;
 
-    $("#rollDice").click(function(event) {
+    $(".rollDice").click(function(event) {
 
       roll1 = Math.floor((Math.random() * 6) + 1);
         $("#displayDie1").text(roll1);
@@ -68,7 +68,7 @@ $(document).ready(function() {
       console.log("player 2 total score:", player2.totalScore);
     });
 
-    $("#hold").click(function(event) {
+    $(".hold").click(function(event) {
       if (player === 1) {
         player1.totalScore = player1.addTotal(player1.turnScore);
         player1.turnScore = 0;
