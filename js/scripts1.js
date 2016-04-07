@@ -23,28 +23,42 @@ $(document).ready(function() {
 
     $("#rollDice").click(function(event) {
 
-      roll1 = Math.floor((Math.random() * 6) + 1)
-      roll2 = Math.floor((Math.random() * 6) + 1)
+      roll1 = Math.floor((Math.random() * 6) + 1);
+        $("#displayDie1").text(roll1);
+      roll2 = Math.floor((Math.random() * 6) + 1);
+        $("#displayDie2").text(roll2);
+
+        $("#displayTotal1").text(player1.totalScore);
+        $("#displayTotal2").text(player2.totalScore);
+        $("#displayTurn1").text(player1.turnScore);
+        $("#displayTurn2").text(player2.turnScore); // Solves layout issue
+                                                // when there is no value yet
 
       if (player === 1) {
         if (roll1 === 1 && roll2 === 1) {
           player1.totalScore = 0;
           player = 2;
+          $("#displayTotal1").text(player1.totalScore);
         } else if (roll1 === 1 || roll2 === 1) {
           player1.turnScore = 0;
           player = 2;
+          $("#displayTurn1").text(player1.turnScore);
         } else {
           player1.turnScore = player1.addTurn(roll1, roll2);
+          $("#displayTurn1").text(player1.turnScore);
         }
       } else {
         if (roll1 === 1 && roll2 === 1)  {
           player2.totalScore = 0;
           player = 1;
+          $("#displayTotal2").text(player2.totalScore);
         } else if (roll1 === 1 || roll2 === 1) {
           player2.turnScore = 0;
           player = 1;
+          $("#displayTurn2").text(player2.turnScore);
         } else {
           player2.turnScore = player2.addTurn(roll1, roll2);
+          $("#displayTurn2").text(player2.turnScore);
         }
       }
       console.log("your roll:", roll1, roll2);
@@ -59,6 +73,7 @@ $(document).ready(function() {
         player1.totalScore = player1.addTotal(player1.turnScore);
         player1.turnScore = 0;
         player = 2;
+        $("#displayTotal1").text(player1.totalScore);
         if (player1.totalScore >= 100) {
           alert("Player One Wins!!");
         }
@@ -66,6 +81,7 @@ $(document).ready(function() {
         player2.totalScore = player2.addTotal(player2.turnScore)
         player = 1;
         player2.turnScore = 0;
+        $("#displayTotal2").text(player2.totalScore);
         if (player2.totalScore >= 100) {
           alert("Player Two Wins :/ ");
         }
