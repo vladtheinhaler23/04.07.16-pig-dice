@@ -1,8 +1,27 @@
+body {
+  background-color: white;
+}
+.jumbotron {
+  background-color: #00F2F2;
+  opacity: 0.75;
+  box-shadow: 10px 10px 5px #E36588;
+  color: #0075F2;
+  text-shadow: 1px 1px black;
+  border: 1px solid #E36588;
+}
 #dice {
   text-align: center;
+  margin-top: 100px;
+  margin-bottom: 200px;
 }
 .game {
   display: none;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#intro {
+  margin-top: 100px;
+  margin-bottom: 250px;
 }
 .gameBoard {
   text-align: center;
@@ -11,40 +30,50 @@
 }
 #win-condition1 {
   display: none;
+  margin-top: 500px;
+  margin-bottom: 500px;
 }
 #win-condition2 {
   display: none;
+  margin-top: 500px;
+  margin-bottom: 500px;
 }
 #rules {
   display: none;
 }
 .die1 {
   max-width: 100px;
-  background-color: blue;
-  border: 5px solid black;
+  min-height: 75px;
+  background-color: #0075F2;
+  border: 1px solid black;
+  box-shadow: 5px 5px 3px black;
   margin-left: auto;
   margin-right: auto;
   line-height: 75px;
   color: white;
+  border-radius: 5px 20px 5px;
 
 }
 .die2 {
   margin-top: 10px;
   max-width: 100px;
-  background-color: blue;
-  border: 5px solid black;
+  min-height: 75px;
+  background-color: #0075F2;
+  box-shadow: 5px 5px 3px black;
+  border: 1px solid black;
   margin-left: auto;
   margin-right: auto;
   line-height: 75px;
   color: white;
+  border-radius: 5px 20px 5px;
 }
 #displayTotals1 {
   margin-top: 5px;
   margin-bottom: 5px;
   max-width: 100px;
   min-width: 100px;
-  background-color: red;
-  border: 5px solid black;
+  background-color: #FFEAEE;
+  box-shadow: 4px 4px 3px black;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -54,8 +83,8 @@
   margin-bottom: 5px;
   max-width: 100px;
   min-width: 100px;
-  background-color: red;
-  border: 5px solid black;
+  background-color: #FFEAEE;
+  box-shadow: 4px 4px 3px black;
   text-align: right;
   text-align: center;
   margin-left: auto;
@@ -66,8 +95,8 @@
   margin-bottom: 5px;
   max-width: 100px;
   min-width: 100px;
-  background-color: red;
-  border: 5px solid black;
+  background-color: #FFEAEE;
+  box-shadow: 4px 4px 3px black;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -78,8 +107,8 @@
   margin-bottom: 5px;
   max-width: 100px;
   min-width: 100px;
-  background-color: red;
-  border: 5px solid black;
+  background-color: #FFEAEE;
+  box-shadow: 4px 4px 3px black;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -87,15 +116,28 @@
 }
 #display1 {
   text-align: center;
+  margin-top: 100px;
 }
 #display2 {
-
+  text-align: center;
+  margin-top: 100px;
+}
+#play {
+  margin-top: 25px;
+  background-color: #0075F2;
+  min-height: 75px;
+  min-width: 200px;
+  color: #E36588;
+  text-shadow: 2px 2px black;
+  box-shadow: 3px 3px 1px black;
 }
 .buttons1 {
   display: none;
+  margin-top: 75px;
 }
 .buttons2 {
   display: none;
+  margin-top: 75px;
 }
 #player1Div {
   min-height: 500px;
