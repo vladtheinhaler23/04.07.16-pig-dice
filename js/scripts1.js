@@ -75,7 +75,9 @@ $(document).ready(function() {
         player = 2;
         $("#displayTotal1").text(player1.totalScore);
         if (player1.totalScore >= 100) {
-          alert("Player One Wins!!");
+          $("#win-condition1").show();
+          $(".gameBoard").hide();
+
         }
       } else {
         player2.totalScore = player2.addTotal(player2.turnScore)
@@ -83,7 +85,8 @@ $(document).ready(function() {
         player2.turnScore = 0;
         $("#displayTotal2").text(player2.totalScore);
         if (player2.totalScore >= 100) {
-          alert("Player Two Wins :/ ");
+          $("#win-condition2").show();
+          $(".gameBoard").hide();
         }
       }
       console.log("player 1 total score:", player1.totalScore);
@@ -96,6 +99,12 @@ $(document).ready(function() {
       if (response) {
         location.reload();
       }
+    });
+    $("#play").click(function(event) {
+      event.preventDefault;
+
+      $(".gameBoard").show();
+      $("#intro").hide()
     });
 
 

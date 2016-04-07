@@ -10,70 +10,92 @@
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron">
-        <h1>PIG DICE</h1>
-        <h3>Rules:</h3>
-        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h4>
-        <button id="play" type="submit" class="btn-success">PLAY PIG DICE</button>
+      <div id="intro" class="container">
+        <div class="jumbotron">
+          <h1>PIG DICE</h1>
+          <h3>Rules:</h3>
+          <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h4>
+          <button id="play" type="submit" class="btn-success">PLAY PIG DICE</button>
+        </div>
       </div>
+
       <div class="container">
         <div class="gameBoard">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
               <div id="player1Div">
                 <h1>PLAYER 1</h1>
-                <div class="die1">
-                  <p><span id="displayDie1">0</span></p> <!-- Placeholder until filled -->
-                </div>
-                <div id="display1">
-                  <div id="displayTurns1">
-                    <p><span id="displayTurn1">00</span></p>
-                  </div>
-                  <div id="displayTotals1">
-                    <p><span id="displayTotal1">00</span></p>
-                  </div>
-                </div>
 
-                <button id="rollDice" type="submit" class="btn-danger rollDice">Roll</button>
-                <button id="hold" type="submit" class="btn-success hold">Hold</button>
+                  <div id="display1">
+                    <div id="displayTurns1">
+                      <p><span id="displayTurn1">00</span></p>
+                    </div>
+                    <div id="displayTotals1">
+                      <p><span id="displayTotal1">00</span></p>
+                    </div>
+                  </div>
+                  <div class="buttons1">
+                    <button type="submit" class="btn-danger rollDice">Roll</button>
+                    <button type="submit" class="btn-success hold">Hold</button>
+                  </div>
+              </div>
+            </div>
+            <div id="dice" class="col-md-4">
+              <div class="die1">
+                <p><span id="displayDie1">0</span></p> <!-- Placeholder until filled -->
+              </div>
+              <div class="die2">
+                <p><span id="displayDie2">0</span></p>
               </div>
             </div>
 
-            <div class="col-md-6">
-              <div class="player2Div">
-                <h1>PLAYER 2</h1>
-                <div class="die2">
-                  <p><span id="displayDie2">0</span></p>
-                </div>
-                <div id="display2">
-                  <div id="displayTurns2">
-                    <p><span id="displayTurn2">00</span></p>
-                  </div>
-                  <div id="displayTotals2">
-                    <p><span id="displayTotal2">00</span></p>
-                  </div>
-                </div>
 
-                <button type="submit" class="btn-danger rollDice">Roll</button>
-                <button type="submit" class="btn-success hold">Hold</button>
+
+            <div class="col-md-4">
+              <div id="player2Div">
+                <h1>PLAYER 2</h1>
+
+                  <div id="display2">
+                    <div id="displayTurns2">
+                      <p><span id="displayTurn2">00</span></p>
+                    </div>
+                    <div id="displayTotals2">
+                      <p><span id="displayTotal2">00</span></p>
+                    </div>
+                  </div>
+                  <div class="buttons2">
+                    <button type="submit" class="btn-danger rollDice">Roll</button>
+                    <button type="submit" class="btn-success hold">Hold</button>
+                  </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div id="win-condition">
-        <div class="jumbotron">
-          <h2>PLAYER X Won</h2>
-          <button id="newGame" type="submit" class="btn-primary">NEW GAME</button>
+      <div class="container">
+        <div id="win-condition1">
+          <div class="jumbotron">
+            <h2>PLAYER 1 Won</h2>
+            <button id="newGame" type="submit" class="btn-primary">NEW GAME</button>
+          </div>
+        </div>
+        <div id="win-condition2">
+          <div class="jumbotron">
+            <h2>PLAYER 2 Won</h2>
+            <button id="newGame" type="submit" class="btn-primary">NEW GAME</button>
+          </div>
         </div>
       </div>
-      <div id="rules">
-        <div class="jumbotron">
-          <h1>Rules: </h1>
-          <button id="rules" type="submit" class="btn">Rules</button>
-          <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
+      <div class="container">
+        <div id="rules">
+          <div class="jumbotron">
+            <h1>Rules: </h1>
+            <button id="rules" type="submit" class="btn">Rules</button>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
+          </div>
         </div>
       </div>
+
     </div>
   </body>
   </html>

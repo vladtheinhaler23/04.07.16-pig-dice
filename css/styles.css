@@ -1,57 +1,105 @@
-.gameBoard {
+#dice {
   text-align: center;
 }
+
+.gameBoard {
+  text-align: center;
+  min-height: 500px;
+  display: none;
+}
+#win-condition1 {
+  display: none;
+}
+#win-condition2 {
+  display: none;
+}
+#rules {
+  display: none;
+}
 .die1 {
-  min-width: 75px;
-  min-height: 50px;
+  max-width: 100px;
   background-color: blue;
   border: 5px solid black;
-  float: right;
+  margin-left: auto;
+  margin-right: auto;
   line-height: 75px;
+  color: white;
+
 }
 .die2 {
-  min-width: 75px;
-  min-height: 50px;
+  margin-top: 10px;
+  max-width: 100px;
   background-color: blue;
   border: 5px solid black;
-  float: left;
+  margin-left: auto;
+  margin-right: auto;
   line-height: 75px;
+  color: white;
 }
 #displayTotals1 {
+  margin-top: 5px;
+  margin-bottom: 5px;
   max-width: 100px;
   min-width: 100px;
   background-color: red;
   border: 5px solid black;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 #displayTotals2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
   max-width: 100px;
   min-width: 100px;
   background-color: red;
   border: 5px solid black;
   text-align: right;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 #displayTurns1 {
+  margin-top: 5px;
+  margin-bottom: 5px;
   max-width: 100px;
   min-width: 100px;
   background-color: red;
   border: 5px solid black;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 #displayTurns2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
   max-width: 100px;
   min-width: 100px;
   background-color: red;
   border: 5px solid black;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 
 }
-
-
 #display1 {
-  float: left;
+  text-align: center;
 }
 #display2 {
-  float: right;
+
+}
+.buttons1 {
+  position: relative;
+  bottom: 0;
+}
+.buttons2 {
+  position: relative;
+  bottom: 0;
+}
+#player1Div {
+  min-height: 500px;
+}
+#player2Div {
+  min-height: 500px;
 }
