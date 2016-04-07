@@ -20,6 +20,8 @@ $(document).ready(function() {
   var player2 = new Score();
   var roll1 = 0;
   var roll2 = 0;
+  $(".buttons1").show();
+  $(".buttons2").show();
 
     $(".rollDice").click(function(event) {
 
@@ -35,27 +37,37 @@ $(document).ready(function() {
                                                 // when there is no value yet
 
       if (player === 1) {
+        $(".buttons2").hide();
         if (roll1 === 1 && roll2 === 1) {
           player1.totalScore = 0;
           player = 2;
           $("#displayTotal1").text(player1.totalScore);
+          $(".buttons1").hide();
+          $(".buttons2").show();
         } else if (roll1 === 1 || roll2 === 1) {
           player1.turnScore = 0;
           player = 2;
           $("#displayTurn1").text(player1.turnScore);
+          $(".buttons1").hide();
+          $(".buttons2").show();
         } else {
           player1.turnScore = player1.addTurn(roll1, roll2);
           $("#displayTurn1").text(player1.turnScore);
         }
       } else {
+
         if (roll1 === 1 && roll2 === 1)  {
           player2.totalScore = 0;
           player = 1;
           $("#displayTotal2").text(player2.totalScore);
+          $(".buttons2").hide();
+          $(".buttons1").show();
         } else if (roll1 === 1 || roll2 === 1) {
           player2.turnScore = 0;
           player = 1;
           $("#displayTurn2").text(player2.turnScore);
+          $(".buttons2").hide();
+          $(".buttons1").show();
         } else {
           player2.turnScore = player2.addTurn(roll1, roll2);
           $("#displayTurn2").text(player2.turnScore);
@@ -73,6 +85,8 @@ $(document).ready(function() {
         player1.totalScore = player1.addTotal(player1.turnScore);
         player1.turnScore = 0;
         player = 2;
+        $(".buttons1").hide();
+        $(".buttons2").show();
         $("#displayTotal1").text(player1.totalScore);
         if (player1.totalScore >= 100) {
           $("#win-condition1").show();
@@ -84,6 +98,8 @@ $(document).ready(function() {
         player = 1;
         player2.turnScore = 0;
         $("#displayTotal2").text(player2.totalScore);
+        $(".buttons2").hide();
+        $(".buttons1").show();
         if (player2.totalScore >= 100) {
           $("#win-condition2").show();
           $(".gameBoard").hide();
@@ -102,7 +118,7 @@ $(document).ready(function() {
     });
     $("#play").click(function(event) {
       event.preventDefault;
-
+      $(".game").show();
       $(".gameBoard").show();
       $("#intro").hide()
     });

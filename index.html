@@ -19,58 +19,61 @@
         </div>
       </div>
 
-      <div class="container">
-        <div class="gameBoard">
-          <div class="row">
-            <div class="col-md-4">
-              <div id="player1Div">
-                <h1>PLAYER 1</h1>
+      <div class="container game">
+        <div class="jumbotron">
+          <div class="gameBoard">
+            <div class="row">
+              <div class="col-md-4">
+                <div id="player1Div">
+                  <h1>PLAYER 1</h1>
 
-                  <div id="display1">
-                    <div id="displayTurns1">
-                      <p><span id="displayTurn1">00</span></p>
+                    <div id="display1">
+                      <div id="displayTurns1">
+                        <p><span id="displayTurn1">00</span></p>
+                      </div>
+                      <div id="displayTotals1">
+                        <p><span id="displayTotal1">00</span></p>
+                      </div>
                     </div>
-                    <div id="displayTotals1">
-                      <p><span id="displayTotal1">00</span></p>
+                    <div class="buttons1">
+                      <button type="submit" class="btn-danger rollDice">Roll</button>
+                      <button type="submit" class="btn-success hold">Hold</button>
                     </div>
-                  </div>
-                  <div class="buttons1">
-                    <button type="submit" class="btn-danger rollDice">Roll</button>
-                    <button type="submit" class="btn-success hold">Hold</button>
-                  </div>
+                </div>
               </div>
-            </div>
-            <div id="dice" class="col-md-4">
-              <div class="die1">
-                <p><span id="displayDie1">0</span></p> <!-- Placeholder until filled -->
+              <div id="dice" class="col-md-4">
+                <div class="die1">
+                  <p><span id="displayDie1">0</span></p> <!-- Placeholder until filled -->
+                </div>
+                <div class="die2">
+                  <p><span id="displayDie2">0</span></p>
+                </div>
               </div>
-              <div class="die2">
-                <p><span id="displayDie2">0</span></p>
-              </div>
-            </div>
 
 
 
-            <div class="col-md-4">
-              <div id="player2Div">
-                <h1>PLAYER 2</h1>
+              <div class="col-md-4">
+                <div id="player2Div">
+                  <h1>PLAYER 2</h1>
 
-                  <div id="display2">
-                    <div id="displayTurns2">
-                      <p><span id="displayTurn2">00</span></p>
+                    <div id="display2">
+                      <div id="displayTurns2">
+                        <p><span id="displayTurn2">00</span></p>
+                      </div>
+                      <div id="displayTotals2">
+                        <p><span id="displayTotal2">00</span></p>
+                      </div>
                     </div>
-                    <div id="displayTotals2">
-                      <p><span id="displayTotal2">00</span></p>
+                    <div class="buttons2">
+                      <button type="submit" class="btn-danger rollDice">Roll</button>
+                      <button type="submit" class="btn-success hold">Hold</button>
                     </div>
-                  </div>
-                  <div class="buttons2">
-                    <button type="submit" class="btn-danger rollDice">Roll</button>
-                    <button type="submit" class="btn-success hold">Hold</button>
-                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
       </div>
       <div class="container">
         <div id="win-condition1">

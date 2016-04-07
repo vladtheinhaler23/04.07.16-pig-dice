@@ -1,7 +1,9 @@
 #dice {
   text-align: center;
 }
-
+.game {
+  display: none;
+}
 .gameBoard {
   text-align: center;
   min-height: 500px;
@@ -90,12 +92,10 @@
 
 }
 .buttons1 {
-  position: relative;
-  bottom: 0;
+  display: none;
 }
 .buttons2 {
-  position: relative;
-  bottom: 0;
+  display: none;
 }
 #player1Div {
   min-height: 500px;
